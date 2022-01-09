@@ -1,0 +1,111 @@
+<?php
+/**
+ * Market functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package Market
+ */
+
+if ( ! defined( '_S_VERSION' ) ) {
+    // Replace the version number of the theme on each release.
+    define( '_S_VERSION', '1.0.0' );
+}
+
+
+class Archive_News_Widget extends WP_Widget {
+
+    /**
+     * Register widget with WordPress.
+     */
+
+    function __construct() {
+        parent::__construct(
+            'archive_news_widget', // Base ID
+            esc_html__( 'Архивы постов AutoParts', 'smarkets' ), // Name
+            array( 'description' => 'A Archive news Widget' ) // Args
+        );
+    }
+
+    /**
+     * Front-end display of widget.
+     *
+     * @see WP_Widget::widget()
+     *
+     * @param array $args     Widget arguments.
+     * @param array $instance Saved values from database.
+     */
+    public function widget( $args, $instance )
+    {
+        echo $args['before_widget'];
+        if ( ! empty( $instance['title'] ) ) {
+            echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
+        } ?>
+        <div class="modcontent">
+            <ul class="list-group ">
+                <?php
+                $terms = wp_get_archives( array(
+                    'type'            => 'monthly',
+                    'limit'           => '', // при '0' получим ошибку синтаксиса (значение нужно указывать числом или пустой строкой)
+                    'format'          => 'html',
+                    'before'          => '',
+                    'after'           => '',
+                    'show_post_count' => false,
+                    'echo'            => 1,
+                    'post_type'       => 'post',
+                ) );
+                $item=0;
+                if($terms) {
+                    foreach($terms as $term) { ?>
+                        <li class="list-group-item"> <a href="<?php echo get_category_link($term->term_id);?>"class="group-item active"><?php echo $term->name;?></a></li>
+                    <?php } }  ?>
+            </ul>
+        </div>
+
+        <?php    echo $args['after_widget'];
+
+    }
+
+    /**
+     * Back-end widget form.
+     *
+     * @see WP_Widget::form()
+     *
+     * @param array $instance Previously saved values from database.
+     */
+    public function form( $instance ) {
+        $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'Архивы постов', 'smarkets' );
+        ?>
+        <p>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Архивы постов', 'smarkets' ); ?></label>
+            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+        </p>
+        <?php
+    }
+
+    /**
+     * Sanitize widget form values as they are saved.
+     *
+     * @see WP_Widget::update()
+     *
+     * @param array $new_instance Values just sent to be saved.
+     * @param array $old_instance Previously saved values from database.
+     *
+     * @return array Updated safe values to be saved.
+     */
+    public function update( $new_instance, $old_instance ) {
+        $instance = array();
+        $instance['title'] = ( ! empty( $new_instance['title'] ) ) ? sanitize_text_field( $new_instance['title'] ) : '';
+
+        return $instance;
+
+
+    }
+
+} // class Foo_Widget
+
+// register Foo_Widget widget
+function register_archive_news_widget() {
+    register_widget( 'Archive_News_Widget' );
+}
+add_action( 'widgets_init', 'register_archive_news_widget' );
