@@ -1,0 +1,45 @@
+.carusel {
+   
+    .owl-stage {
+        display: flex;
+    }
+    .owl-item  {
+        min-height: 100%;
+        display: flex;
+        gap: 10px;
+    }
+    .productShopcart {
+        margin: 0 auto;
+        height: 100%;
+
+        .yith-wcwl-add-to-wishlist {
+            a {
+                text-align: left;
+                
+            }
+            i {
+                font-size: 25px;
+            }
+        }
+        &__images-dop {
+            max-width: 300px;
+            img {
+                width: 100%;
+                height: 300px;
+                border: 1px solid #aaa;
+        border-radius: 3px;
+            }
+            .img2 {
+                display: none;
+            }
+        }
+        &__images-dop:hover {
+            .img1 {
+                display: none;
+            }
+            .img2 {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.woocommerce-account {
+    h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .woocommerce-form-login {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        width: 320px;
+        margin: 20px auto;
+        text-align: center;
+        padding: 5px;
+        .input-text {
+        width: 300px;
+        margin: 0 auto;
+        }
+    }
+    .form-row-wide {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+       
+    }
+    .lost_password a {
+        font-size: 18px;
+    }
+    .lost_password a:hover {
+        color: $ColorButtonText;
+    }
+}
+.form-row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    label {
+        font-size: 18px;
+    }
+}

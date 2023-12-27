@@ -1,0 +1,35 @@
+@import "./settings/count.scss";
+@import "./settings/groul.scss";
+@import "./settings/input-button.scss";
+@import "./settings/notices.scss";
+@import "./settings/price_filter.scss";
+@import "./settings/qty.scss";
+@import "./settings/quick-views.scss";
+@import "./settings/badges.scss";
+@import "./settings/stars.scss";
+@import "./settings/breadcrumbs.scss";
+@import "./settings/related.scss";
+//@import "./settings/owl.scss";
+
+@import "./checkout/checkout.scss";
+@import "./checkout/order-received.scss";
+
+
+@import "./myaccount/my-account.scss";
+@import "./myaccount/lost-password.scss";
+@import "./myaccount/login.scss";
+@import "./myaccount/edit-address.scss";
+@import "./myaccount/edit-account.scss";
+
+@import "./plugins/ajax-product-filter.scss";
+@import "./plugins/wishlist.scss";
+
+@import "./cart/mini-cart.scss";
+@import "./cart/page-cart.scss";
+@import "./cart/table.scss";
+
+
+@import "./page/shop.scss";
+@import "./page/single-prod.scss";
+@import "./page/desc-tabs.scss";
+@import "./page/home.scss";

@@ -1,0 +1,47 @@
+.themeModal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 7000;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+}
+
+.themeModal__body {
+  background-color: #fff;
+  max-width: 1000px;
+  height: auto;
+  opacity: 1;
+  border: 5px solid $HeadColor;
+  border-radius: 10px;
+  position: relative;
+  -webkit-transition: all 0.8s ease 0.8s;
+  -o-transition: all 0.8s ease 0.8s;
+  transition: all 0.8s ease 0.8s;
+  margin: 150px auto;
+ padding: 10px;
+  }
+
+  .themeModal__header {
+    height: 20px;
+    opacity: 1;
+    width: 100%;
+    text-align: right;
+  }
+  .modal-close  {
+    background-color: inherit;
+    transform: rotate(45deg);
+    color: #777; 
+  }
+  .themeModal-open {
+    opacity: 1;
+    visibility: visible;
+  }

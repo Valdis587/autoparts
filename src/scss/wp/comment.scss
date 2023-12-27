@@ -1,0 +1,172 @@
+.comments-area {
+    width: 100%;
+ }
+ 
+ .comments-title, .comment-reply-title {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 0;
+ }
+ .comment-list {
+    margin: 10px 0;
+ }
+ .comment-list li {
+    padding: 10px 10px;
+ }
+ .comment-author  {
+ display: flex;
+ align-items: center;
+ }
+ .comments-area .avatar {
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+ }
+ .fn {
+    margin: 0 0 0 20px;
+ }
+ .comment-metadata {
+    padding: 10px 0;
+ }
+ .comment-edit-link {
+    margin: 0 0 0 20px;
+    padding: 5px 10px;
+    color: $ColorLink; 
+    transition: all 0.6s ease 0.3s;
+ }
+  .comment-edit-link:hover,  .logged-in-as a:hover {
+    color: $ColorLinkHover;
+ }
+ .comment-content {
+    margin: 0 0 10px 0;
+ }
+ .comment-content p {
+    padding: 10px 0 10px 10px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+ }
+ .reply{
+    margin: 30px 0 0 0;
+ }
+ .comment-respond {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+ }
+ .comment-reply-link, .form-submit .submit {
+    padding: 5px 10px;
+    background-color: $ColorButton;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.6s ease 0.3s;
+ }
+ .comment-reply-link:hover, .form-submit:hover .submit:hover { 
+   background-color: $ColorButtonHover;
+ }
+ .comment_container, .comment-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+ }
+ .comment-respond {
+    margin: 20px 0 0 0;
+ }
+ .children li {
+    margin: 10px 0 0 40px;
+ }
+ .logged-in-as {
+    padding: 0 0 10px 0;
+ }
+ .logged-in-as a {
+    padding: 0 5px;
+    color: $ColorLink;
+    transition: all 0.6s ease 0.3s;
+ }
+ .comment-form-comment, .comment-form-email, .comment-form-author, .comment-form-url {
+    display: flex;
+    flex-direction: column;
+ }
+ .comment-form-comment label, .comment-form-author label, .comment-form-email label,
+ .comment-form-url label  {
+    margin: 20px 0 0 10px;
+    @media (max-width: 490px) {
+       margin: 0;
+    }
+ }
+ .comment-form-comment textarea, .comment-form-author input, .comment-form-email input, .comment-form-url input {
+    border: 1px solid #b9b9b9;
+    margin: 20px 10px;
+    border-radius: 5px;
+    padding: 5px;
+    @media (max-width: 490px) {
+       margin: 5px 0 0 0;
+    }
+ }
+ 
+ .comment-form-url label, .comment-form-url input {
+    display: none;
+ }
+ .comment-respond {
+   padding: 0 10px;
+ }
+ .comment-form {
+   display: grid;
+   grid-template:
+   "notes notes " 
+   "autor email"
+   "reating reating"
+   "comment comment"
+   "button button"
+   "cooci cooci";
+   grid-template-columns: repeat(2, 4fr);
+  
+   @media (max-width: 665px){
+      display: flex;
+      flex-direction: column;
+   row-gap: 10px;
+   }
+}
+.comment-notes {
+   grid-area: notes;
+}
+.comment-form-author {
+   grid-area: autor;
+}
+.comment-form-email {
+   grid-area: email;
+}
+.comment-form-comment {
+   grid-area: comment;
+}
+.form-submit {
+   grid-area: button;
+
+}
+.comment-form-cookies-consent {
+   margin: 10px 0;
+   grid-area: cooci;
+}
+.comment-form-rating {
+   grid-area: reating;
+   padding:  0 0 0 10px;
+}
+ .comment-form-rating .stars, .woocommerce-Reviews {
+    margin: 10px 0 0 0;
+ }
+ .comment-notes {
+    margin: 0 0 10px 0;
+ }
+ .woocommerce-Reviews-title {
+    font-size: 18px;
+ }
+ .woocommerce-noreviews {
+    font-size: 17px;
+    padding: 10px 0;
+ }
+ .wp-block-latest-posts__list, .wp-block-archives-list, .wp-block-categories-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 20px 0;
+ }

@@ -1,0 +1,63 @@
+@import "base/null.scss";
+
+
+:root {
+   --HeadColor: #FF2D37;
+   --DubleColor: #282828;
+   --DubleTextColor: #878787;
+   --HeadTextColor: #ffffff;
+   --ColorButton: #FF2D37;
+   --ColorButtonHover: #282828;
+   --ColorButtonText: #ffffff;
+   --ColorLink: #bbbbbb;
+   --ColorLinkHover: #FF2D37; 
+   --ColorCountBack: #E67E22;
+   --ColorCountText: #ffffff;
+   --ColorFooter : #181818;
+   --ColorTextFooter: #bbbbbb;
+   --yith-wcan-labels_style_background_hover: #FF2D37;
+    --yith-wcan-filters_colors_accent: #FF2D37;
+    --yith-wcan-anchors_style_text_hover:  #FF2D37; 
+    --yith-wcan-anchors_style_text_active: #FF2D37;
+    --badgickSale: #ff2d37;
+    --badgickNew: #3599ff;
+    --badgickHit: #098524;
+}  
+
+$minWidth: 320;
+$maxWidthContainer: 1590;
+$padding: 15;
+
+$HeadColor: var(--HeadColor);
+$DubleColor: var(--DubleColor);
+$DubleTextColor: var(--DubleTextColor);
+$HeadTextColor: var(--HeadTextColor);
+$ColorButton: var(--ColorButton);
+$ColorButtonText: var(--ColorButtonText);
+$ColorButtonHover: var(--ColorButtonHover);
+$ColorLink: var(--ColorLink);
+$ColorLinkHover: var(--ColorLinkHover);
+$ColorCountBack: var(--ColorCountBack);
+$ColorCountText: var(--ColorCountText);
+$ColorFooter : var(--ColorFooter);
+$ColorTextFooter: var(--ColorTextFooter);
+
+.site-wrapper {
+   height: 100%;
+   display: flex;
+   flex-direction: column
+}
+.page-wrapper {
+   flex: 1 1 auto
+}
+@import "./base/grid.scss";
+@import "base/mixin";
+@import "fonts";
+@import "./sidebar.scss";
+@import "./woo/woo.scss";
+@import "./wp/wp.scss";
+@import "header";
+@import "./blog.scss";
+@import "footer";
+
+

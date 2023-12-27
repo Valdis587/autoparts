@@ -1,0 +1,191 @@
+.header {
+    &__top-line {
+        background-color: $DubleColor;
+        color: $DubleTextColor;
+        font-size: 16px;
+    }
+    &__top-content {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 5px;
+        align-items: center;
+        min-height: 40px;
+    }
+    &__logo {
+        color: #ffffff;
+    }
+    &__top-icons {
+        @media(max-width: 646px) {
+            display: none;
+        }
+    }
+    &__menu-button {
+        font-size: 30px;
+        display: none;
+        @media(max-width: 978px) {
+            display: block;
+        }
+    }
+    &__top-contacts-list {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+        li {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        li a {
+            transition: all 0.6s ease 0.3s;  
+        }
+        li a:hover {
+            color: $ColorLinkHover;
+        }
+        li i {
+            color: $HeadColor;
+            font-size: 14px;
+        }
+    }
+
+    &__center-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+        gap: 10px;
+        @media(max-width: 646px) {
+           flex-direction: column;
+           justify-content: flex-start;
+           margin: 0 0 10px 0;
+        }
+    }
+    &__logo, &__icon-box {
+        width: 310px;
+        flex: 0 0 310px;
+        text-align: center;
+        @media(max-width: 646px) {
+            flex: 1 1 auto;
+            margin: 10px 0;
+         }
+    }
+    &__search-box {
+        width: auto;
+        flex: 1 1 auto;
+        padding: 0 10px;
+    }
+    &__form {
+        border: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+        @media(max-width: 1100px) {
+            display: none;
+        }
+    }
+    &__select {
+        padding: 10px 5px;
+        background-color: inherit;
+        border-right: 1px solid #ddd;
+    }
+    &__input {
+        width: 100%;
+        flex: 1 1 auto;
+        padding: 0 15px;  
+    }
+    &__search-button {
+        background-color: $HeadColor;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 3px;
+    }
+    &__icon-box {
+        position: relative;
+      
+    }
+    &__cart-list {
+        display: flex;
+        column-gap: 10px;
+        width: 250px;
+        margin: 0 auto;
+        align-items: center;
+        li a i {
+            font-size: 20px;
+            border: 1px solid #ddd;
+            padding: 8px;
+            border-radius: 3px;
+        }
+    }
+   &__minicart {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+   }
+   &__mycart {
+    border: 1px solid #ddd;
+    padding: 10px 5px 9px 5px;
+    border-radius: 3px;
+    font-size: 16px;
+   }
+   &__num-white, &__num-cart {
+    position: absolute;
+    background-color: $HeadColor;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 100%;
+   }
+   &__num-white {
+    left: 50px;
+    top: -20px;
+   }
+   &__num-cart {
+    left: 100px;
+    top: -20px;
+   }
+   &__price {
+    color: $HeadColor;
+    padding: 0  0 0 10px;
+   }
+   &__menu-line {
+    background-color: $HeadColor;
+    color: $HeadTextColor;
+   }
+   &__menu-category-box {
+    background-color: $DubleColor;
+    padding: 10px;
+    width: 310px;
+    position: relative;
+    @media(max-width: 978px) {
+        position: static;
+    }
+   }
+   &__menu-category-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 100%;
+    
+   }
+}
+@import "./menu.scss";
+
+.social-icon-list {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    font-size: 19px;
+    li a i {
+        border: 1px solid $DubleTextColor;
+        padding: 5px;
+        border-radius: 3px;
+        transition: all 0.6s ease 0.3s; 
+    }
+    li a i:hover { 
+        background-color: $HeadColor;
+        color: #ffffff;
+    }
+}
+

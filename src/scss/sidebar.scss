@@ -1,0 +1,134 @@
+.sidebar {
+   
+    .widget_recent_entries ul, .widget_recent_comments ul, .widget_archive ul, .widget_categories ul {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        a {
+            transition: all 0.6s ease 0.3s;
+        }
+        a:hover {
+            color: $ColorLinkHover;
+        }
+    }
+      .tagcloud {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        a {
+            padding: 5px 8px;
+            background-color: $ColorButton;
+            color: $ColorButtonText;
+            border-radius: 3px;
+            transition: all 0.6s ease 0.3s;
+        }
+        a:hover {
+            background-color: $ColorButtonHover;
+        }
+    }
+    &__widget {
+        margin: 0 0 20px 0;
+    }
+   &__wiget-body {
+    padding: 10px;
+    
+   }
+   &__reviews {
+    padding: 10px;
+   }
+    &__reviews-item {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+       display: flex;
+       flex-direction: column;
+       row-gap: 10px;
+       padding: 5px;
+       text-align: center;
+       margin: 0 5px;
+    }
+    &__reviews-img {
+        width: 100px;
+        margin: 0 auto;
+        border: 2px solid $HeadColor;
+        border-radius: 100%;
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+        }
+    }
+    &__reviews-neme {
+        font-size: 18px;
+    }
+    &__reviews-rewievs  {
+        flex: 1 1 auto;
+        font-style: italic;
+        background-color: rgb(167, 167, 167);
+        padding: 5px;
+        border-radius: 3px;
+    }
+    .owl-stage {
+        display: flex;
+        min-height: 100%;
+       
+    }
+    &__widget-title-wrapp {
+        background-color: $HeadColor;
+        color: $HeadTextColor;
+        text-align: center;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+    &__wiget-news-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    &__wiget-news-item {
+        display: flex;
+        column-gap: 5px;
+        align-items: center;
+    }
+    &__wiget-news-img {
+        max-width: 80px;
+        img {
+            width: 100%;
+            height: 40px;
+            border-radius: 3px;
+        }
+    }
+    &__wiget-news-title {
+        transition: all 0.6s ease 0.3s; 
+        width: 100%;
+    }
+    &__wiget-news-title:hover {
+        color: $ColorLinkHover;
+    }
+    &__wiget-caregory-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        li a {
+            transition: all 0.6s ease 0.3s; 
+        }
+        li a:hover {
+            color: $ColorLinkHover;
+        }
+    }
+    &__sub-menu {
+        display: none;
+    }
+    .open-sidebar-category {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        padding: 20px 0;
+    }
+}

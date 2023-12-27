@@ -1,0 +1,82 @@
+.woocommerce-checkout {
+    .woocommerce-error {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .woocommerce-info {
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    .input-text {
+        width: 100%;
+    }
+    .showcoupon:hover {
+        color: $ColorButton;
+    }
+    .woocommerce-form-coupon {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .woocommerce-checkout {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        @media (max-width: 810px) {
+            flex-direction: column;
+        }
+    }
+    #order_review_heading {
+        display: none;
+    }
+    .col2-set {
+        padding: 5px;
+        flex: 1 1 70%;
+    }
+    .woocommerce-checkout-review-order {
+        padding: 5px;
+        flex: 0 0 30%;
+        .product-name {
+            display: flex;
+            justify-content: center;
+        }
+        .wc_payment_methods {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        .payment_box {
+            padding: 5px;
+        }
+        .place-order {
+            margin: 20px 0 0 0;
+        }
+    }
+    .woocommerce-billing-fields {
+        h3 {
+            text-align: center;
+            font-size: 18px;
+            padding: 0 0 20px 0;
+        }
+    }
+    .woocommerce-billing-fields__field-wrapper, .woocommerce-shipping-fields__field-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .checkout .col2-set {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .col-2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .shipping_address {
+        margin: 10px 0 0 0;
+    }
+}

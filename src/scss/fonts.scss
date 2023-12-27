@@ -1,0 +1,96 @@
+@font-face {
+	font-family: icomoon;
+	font-display: swap;
+	src: url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-angle-double-right:before {
+	content: "\e900";
+  }
+  .icon-angle-down:before {
+	content: "\e901";
+  }
+  .icon-bars:before {
+	content: "\e902";
+  }
+  .icon-calendar-alt:before {
+	content: "\e903";
+  }
+  .icon-check:before {
+	content: "\e904";
+  }
+  .icon-comments:before {
+	content: "\e905";
+  }
+  .icon-envelope:before {
+	content: "\e906";
+  }
+  .icon-heart:before {
+	content: "\e907";
+  }
+  .icon-long-arrow-alt-right:before {
+	content: "\e908";
+  }
+  .icon-map-marker-alt:before {
+	content: "\e909";
+  }
+  .icon-odnoklassniki:before {
+	content: "\e90a";
+  }
+  .icon-phone-alt:before {
+	content: "\e90b";
+  }
+  .icon-plus:before {
+	content: "\e90c";
+  }
+  .icon-search:before {
+	content: "\e90d";
+  }
+  .icon-shopping-cart:before {
+	content: "\e90e";
+  }
+  .icon-skype:before {
+	content: "\e90f";
+  }
+  .icon-star-rating:before {
+	content: "\e910";
+  }
+  .icon-telegram-plane:before {
+	content: "\e911";
+  }
+  .icon-th:before {
+	content: "\e912";
+  }
+  .icon-th-list:before {
+	content: "\e913";
+  }
+  .icon-user-alt:before {
+	content: "\e914";
+  }
+  .icon-viber:before {
+	content: "\e915";
+  }
+  .icon-vk:before {
+	content: "\e916";
+  }
+  .icon-whatsapp:before {
+	content: "\e917";
+  }
+  

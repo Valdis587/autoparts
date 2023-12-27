@@ -1,0 +1,15 @@
+.woocommerce-breadcrumb {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    column-gap: 5px;
+    color: $ColorLink;
+}
+.woocommerce-breadcrumb a {
+  transition: all 0.6s ease 0.3s;
+}
+
+.woocommerce-breadcrumb a:hover {
+     color: $ColorLinkHover;
+}

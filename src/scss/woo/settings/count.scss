@@ -1,0 +1,39 @@
+.product__count {
+    position: absolute;  
+    z-index: 70;
+    border-radius: 3px;
+    background-color: $ColorCountBack;
+    color: $ColorCountText;
+    width: 90%;
+    padding: 5px;
+    .product__count-title {
+        font-size: 14px;
+        padding: 5px 0 10px 0;
+        border-bottom: 1px solid $ColorCountText;
+        text-align: center;
+    }
+    .countdown-row {
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0;
+        align-items: center;
+        text-align: center;
+    }
+    .time-item {
+        width: 70px;
+        padding: 5px 0;
+        border: 1px solid $ColorCountText; 
+        border-radius: 3px;   
+    }
+    .num-time {
+        font-size: 18px;
+    }
+    .name-time {
+        font-size: 12px;
+        padding: 4px 0 0 0;
+        text-align: center;
+    }
+}

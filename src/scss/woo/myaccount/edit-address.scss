@@ -1,0 +1,34 @@
+.woocommerce-edit-address {
+    .woocommerce-MyAccount-content {
+        h3 {
+            font-size: 18px;
+        }
+        .woocommerce-address-fields {
+            padding: 20px 0;
+        }
+        .woocommerce-address-fields__field-wrapper {
+            display: flex;
+           flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            @media (max-width: 690px) { 
+                flex-direction: column;
+            }
+        }
+        .woocommerce-address-fields__field-wrapper p {
+            width: 30%;
+            @media (max-width: 690px) { 
+                width: 100%;
+             }
+            .input-text {
+                width: 100%;
+            }
+        }
+        .woocommerce-address-fields {
+            .button {
+                margin: 20px 0;
+            }
+        }
+       
+    }
+}

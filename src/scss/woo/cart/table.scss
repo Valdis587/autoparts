@@ -1,0 +1,48 @@
+.woocommerce-orders-table, 
+.woocommerce-cart-form__contents,
+.woocommerce-checkout-review-order-table,
+.woocommerce-table--order-details,
+.woocommerce-grouped-product-list,
+.wishlist_table,
+.woocommerce-product-attributes,
+.wc-block-cart-items 
+{
+   width: 100%;
+   max-width: 100%;
+   margin-bottom: 1rem;
+   background-color: transparent;
+   text-align: center;
+   border: 1px solid #dee2e6;
+}
+
+.woocommerce-orders-table th,
+.woocommerce-orders-table td, 
+.shop_table_responsive th,
+.shop_table_responsive td,
+.woocommerce-checkout-review-order-table th,
+.woocommerce-checkout-review-order-table td,
+.woocommerce-table--order-details th, 
+.woocommerce-table--order-details td,
+.woocommerce-grouped-product-list th,
+.woocommerce-grouped-product-list td,
+.wishlist_table th,
+.wishlist_table td,
+.woocommerce-product-attributes th,
+.woocommerce-product-attributes td
+{
+   padding: 0.75rem;
+   vertical-align: top;
+   border: 1px solid #dee2e6;
+}
+
+.woocommerce-orders-table thead th,
+.woocommerce-cart-form__contents thead th,
+.woocommerce-checkout-review-order-table thead th,
+.woocommerce-table--order-details thead th,
+.woocommerce-grouped-product-list thead th,
+.wishlist_table thead th
+{
+   vertical-align: bottom;  
+   background-color: #F8F8F8;
+   border-bottom-width: 2px;
+}

@@ -1,0 +1,93 @@
+.woocommerce-account {
+    address {
+        font-size: 16px;
+        br {
+            margin: 5px 0;
+        }
+    }
+    .woocommerce-MyAccount-navigation {
+        padding: 20px 0;
+        background-color: #cccccc;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .woocommerce-MyAccount-navigation ul {
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+       justify-content: center;
+       @media (max-width: 690px) {
+        flex-direction: column;
+        text-align: center;
+       }
+    }
+    .woocommerce-MyAccount-navigation ul li a {
+        padding: 10px;
+        border-radius: 3px;
+        transition: all 0.6s ease 0.3s;
+       color: #000;
+    }
+    .woocommerce-MyAccount-navigation ul li a:hover {
+        color: #727272;
+    }
+    .woocommerce-MyAccount-content {
+        text-align: center;
+        padding: 20px 0; 
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        transition: all 0.6s ease 0.3s;
+    }
+    .woocommerce-MyAccount-content a {
+        transition: all 0.6s ease 0.3s;
+        color: $ColorLink;
+    }
+    .woocommerce-MyAccount-content a:hover {
+        color: $ColorLinkHover;
+    }
+    .woocommerce-info {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        .button {
+            width: 200px;
+            margin: 0 auto;
+        }
+    }
+    .woocommerce-MyAccount-content p {
+        font-size: 18px;
+    }
+    .woocommerce-Addresses {
+       
+        display: flex;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 60px;
+        margin: 20px 0;
+        @media (max-width: 480px) { 
+            flex-direction: column;
+        }
+        .woocommerce-Address {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            padding: 5px;
+          
+           
+        }
+        .woocommerce-Address-title {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+.woocommerce-orders {
+   a.button:hover {
+        background-color: $ColorButtonHover;
+        color: $ColorButtonText;
+    }
+}

@@ -1,0 +1,11 @@
+@mixin funcAdaptiv($property, $min, $max) {
+$main: round($max)-$min;
+$razWight: round($maxWidthContainer)-$minWidth;
+   @media (min-width: #{$minWidth}px) {
+      #{$property}: calc(#{$min}px + #{$main} * (100vw - #{$minWidth}px) / #{$razWight});
+   }
+   @media (min-width: #{$maxWidthContainer}px) {
+      gap: #{$max}px;
+       width: $main;
+   }
+}

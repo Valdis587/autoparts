@@ -1,0 +1,83 @@
+.label-product,
+.label-new,
+.label-sale {
+   text-align: center;
+   background-color: var(--badgickSale);
+   border-radius: 0;
+   color: #fff;
+   display: block;
+   font-size: 12px;
+   font-weight: 400;
+   min-width: 60px;
+   height: 30px;
+   line-height: 30px;
+   position: absolute;
+   top: 15px;
+   text-transform: uppercase;
+   z-index: 20;
+   padding: 0 15px;
+   margin-bottom: 5px;
+}
+
+.label-product-sale,
+.label-sale {
+   background-color: var(--badgickSale);
+   left: -10px;
+}
+.label-bottom {
+   margin: 50px 0 0 0;
+}
+.label-product-hit,
+.label-hit {
+   background-color: var(--badgickHit);
+   left: -10px;
+   
+}
+.label-product-hit:before,
+.label-hit:before {
+   content: "";
+   position: absolute;
+   top: auto;
+   bottom: -7px;
+   left: 0;
+   right: auto;
+   border-bottom: 7px solid transparent;
+   border-top: 0 solid transparent;
+   border-right: 11px solid var(--badgickHit);
+   
+}
+
+.label-product-sale:before,
+.label-sale:before {
+   content: "";
+   position: absolute;
+   top: auto;
+   bottom: -7px;
+   left: 0;
+   right: auto;
+   border-bottom: 7px solid transparent;
+   border-top: 0 solid transparent;
+   border-right: 11px solid var(--badgickSale);
+}
+
+.label-product-new,
+.label-new {
+   background-color: var(--badgickNew);
+   right: -10px;
+}
+
+.label-product-new:before,
+.label-new:before {
+   content: "";
+   position: absolute;
+   top: auto;
+   bottom: -7px;
+   right: 0;
+   left: auto;
+   border-bottom: 7px solid transparent;
+   border-top: 0 solid transparent;
+   border-left: 11px solid var(--badgickNew);
+}
+.label-hit-margin {
+   margin: 40px 0 0 0;
+}
